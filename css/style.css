@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200&family=Montserrat:ital,wght@0,100;0,300;0,500;0,600;1,100;1,200&family=Noto+Sans+Old+Permic&family=Prompt:ital,wght@0,100;0,200;1,300;1,500&family=Skranji&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+nav{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 5px 0px 10px black;
+
+    position: sticky;
+    top: 0px;
+    z-index: 250;
+   
+    
+}
+nav .logo{
+    margin-left: 20px;
+}
+nav ul{
+    margin-right: 120px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none ;
+    margin-left: 92px;
+    margin-right: 5px;   
+}
+nav ul li:hover{
+    transform: scale(1.10);
+    font-weight: bolder;
+    color: orangered;
+    transition: all .3s ease-in-out ;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    /* padding: 10px 10px; */
+}
+
+nav ul li a:hover{
+    color: orangered;
+    /* text-shadow: 0px 5px 5px black; */
+}
+
+
+main{
+    position: relative;
+    box-sizing: border-box;
+    height: 90vh;
+    width: 100%;
+    /* background-image: linear-gradient(140deg,rgba(0,0,0,.9),rgba(10,10,10,.8)),url(../media/hero1.jpeg);
+    background-size: cover;
+    background-position: center ; */
+    /* background-image: url(../media/circle-scatter-haikei.png); */
+    /* background-size: cover; */
+}
+main .imgbox{
+    
+    height: 90vh;
+    width: 45vw;
+    box-sizing: border-box;
+    border-radius: 0px;
+    /* border: 2px solid; */
+    position: relative;
+    left:700px;
+    background-image:url(../media/hero1.jpeg);
+    background-size: cover;
+    background-position: center;
+    animation: sample 12s linear 0s infinite alternate;
+    z-index: 200;
+
+}
+@keyframes sample {
+    25%{
+        background-image:url(../media/hero2.webp);
+    background-size: cover;
+    background-position: center;
+    }
+    50%{
+        background-image:url(../media/hero3.jpg);
+    background-size: cover;
+    background-position: center;
+    }
+    100%{
+        background-image:url(../media/hero4.png);
+    background-size: cover;
+    background-position: center;
+    }
+}
+ main .title h1{
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+    top: 190px;
+    color: black;
+    font-size: 40px;
+    background-color: orangered;
+    width: 100%;
+    text-align: justify;
+   
+ }
+ main .para{
+    box-sizing: border-box;
+    position: absolute;
+    top: 350px;
+    left: 20px;
+    height: 50px;
+    width: 400px;
+    text-align: justify;
+    
+ }
+ main .heading{
+    box-sizing: border-box;
+    font-size: 30px;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+ }
+ main .heading .thali{
+    font-size: 70px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: orangered
+ }
+ main .bttn{
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 200px;
+    left: 20px;
+    
+    
+
+ }
+ main .bttn a{
+    text-decoration: none;
+    height: 80px;
+    width: 80px;
+    border: 2px solid black;
+    padding: 10px;
+    color: black;
+   
+
+ }
+ main .bttn a:hover{
+    background-color: orangered;
+    font-weight: 600;
+    transition: all .5s ease-in-out;
+ }
+
+ footer{
+   background-color: black;
+   color: white;
+   text-align: center;
+   height: 50px;
+   width: 100%;
+   padding-top: 10px;
+   box-sizing: border-box;
+   position: relative;
+   top: 50px;
+   
+ }
+ /* about part */
+ .about-hero{
+    background-image: linear-gradient(120deg,rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(../media/india-3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ }
+
+ .about-theory{
+    position: relative;
+    height:320px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .about-theory .line{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    background-color: orangered;
+ }
+ .about-theory .theory-box{
+    box-sizing: border-box;
+    height: 300px;
+    width: 70%;
+
+    background-color:white;
+    padding: 10px;
+    text-align:center;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+ }
+ .about-theory .theory-box h1{
+    color: rgb(246, 17, 55);
+ }
+
+ .clipimg1{
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    top: 200px;
+    left: 740px;
+ }
+ .clipimg2{
+    position:absolute;
+    height: 200px;
+    width: 300px;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    top: 100px;
+    left: 460px;
+ }
+
+ .our-aim{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 550px;
+
+ }
+ .our-aim .aim-box{
+    display: flex;
+    height: 550px;
+    justify-content:space-between;
+    align-items: center;
+ }
+ .aim-box .goal-vision{
+    box-sizing: border-box;
+    padding: 40px;
+    width: 400px;
+    line-height: 1.7;
+    text-align: justify;
+ }
+
+ /* menu section */
+ .menuheading{
+   font-size: 22px;
+   background-color: orangered;
+   color: white;
+   height: 50px;
+   text-align: center;
+   padding-top: 5px;
+   box-sizing: border-box;
+ }
+
+
+
+
+ .special{
+   width: 100%;
+   box-sizing: border-box;
+   box-sizing: border-box;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   position: relative;
+ }
+
+ .special .special-box{
+   box-sizing: border-box;
+   display: grid;
+   grid-template-columns:repeat(3,300px);
+   grid-template-rows: 300px 300px;
+   gap: 10px;
+ }
+ .special-box .special-item{
+   /* border: 2px solid; */
+ }
+ .special-box a{
+   color: black;
+ }
+ .special-box a .special-item2{
+  
+   background-size: cover;
+   background-position: center;
+ }
+
+
+
+ .special-box .special-item1{
+   background-color: rgb(182, 222, 247);
+   box-sizing: border-box;
+   padding: 10px;
+
+ }
+ .special-box .special-item3{
+   background-color: rgb(203, 248, 203);
+   box-sizing: border-box;
+   padding: 10px;
+ }
+ .special-box .special-item5{
+   background-color: rgb(251, 204, 204);
+   box-sizing: border-box;
+   padding: 10px;
+ }
+
+ .special-item{
+   
+   box-sizing: border-box;
+   text-align: center;
+ }
+
+ .special-item h4{
+ position: relative;
+ top: 15px;
+ font-size: 28px;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+ }
+ .special-item p{
+   position: relative;
+   top: 20px;
+   line-height: 1.5;
+   margin-top: 20px;
+   text-align: center;
+ }
+
+ .special-box a .special-item2 img:hover{
+
+ transform: scale(1.03);
+ box-shadow: 10px 10px  20px black;
+ transition:.6s ease all ;
+ 
+ }
+ .special-box a .special-item4 img:hover{
+
+   transform: scale(1.03);
+   box-shadow: 10px 10px  20px black;
+   transition:.6s ease all ;
+   
+ }
+ .special-box a .special-item6 img:hover{
+
+      transform: scale(1.03);
+      box-shadow: 10px 10px  20px black;
+      transition:.6s ease all ;
+  }
+  /* .pos1{
+   position: absolute;
+   left: -130px;
+   top: 50px;
+  }
+  .pos2{
+   position: absolute;
+   transform: rotate(360DEG);
+   right: -50px;
+   bottom: 50px;
+   overflow: hidden;
+ 
+  } */
+  .main-menu{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100vh;
+   /* background-color: green;  */
+   box-sizing: border-box;
+   position: relative;
+  }
+  .lets h2{
+   /* position: absolute;
+   top: 5px; */
+   color: white;
+   background-color: orangered;
+   width: 100%;
+   text-align: center;
+   padding: 5px;
+  }
+ .menu-box{
+   position: relative;
+   top: 30px;
+   box-sizing: border-box;
+   width: 1400px;
+   height: 700px;
+   display:grid;
+   grid-template-columns: auto auto auto auto ;
+   grid-template-rows: auto auto auto auto;
+   gap: 20px;
+   place-content: center;
+   place-items: center;
+   
+   /* background-color: red;  */
+ }
+
+ .card:hover{
+   transform: scale(1.01);
+   box-shadow: 10px 10px  20px black;
+   transition:.6s ease all ;
+ }
+ 
+ .mycard{
+   width: 350px;
+   height: 170px;
+   border: none;
+   box-sizing: border-box;
+   display: flex;
+   border-radius: 10px;
+
+ }
+ .mycard:hover{
+   transform: scale(1.01);
+   box-shadow: 10px 10px  20px black;
+   transition:.6s ease all ;
+ }
+ .myimg{
+   width: 150px;
+   height: 170px;
+   /* border-right: 2px solid black; */
+   border-radius: 10px;
+   /* border: 2px solid white; */
+ }
+ .myimg1{
+   background-image: url(../media/hero1.jpeg);
+   background-position: center ;
+   background-size: cover;
+ }
+ .myimg2{
+   background-image: url(../media/Asam.webp);
+   background-position: center ;
+   background-size: cover;
+ }
+ .myimg3{
+   background-image: url(../media/Andra-Thali.webp);
+   background-position: center ;
+   background-size: cover;
+ }
+ .myimg4{
+   background-image: url(../media/Bengali-Thali.webp);
+   background-position: center ;
+   background-size: cover;
+ }
+ .myimg5{
+   background-image: url(../media/bihari-litti-sabzi.webp);
+   background-position: center ;
+   background-size: cover;
+ }
+ .myimg6{
+   background-image: url(../media/xq-700x420.webp);
+   background-position: center ;
+   background-size: cover;
+ }
+ .myimg7{
+   background-image: url(../media/maha-Copy.webp);
+   background-position: center ;
+   background-size: cover;
+ }
+ .myimg8{
+   background-image: url(../media/club-mahindra-kandaghat-himachali-thali-and-a-cooking-class-recipe.1024x1024.webp);
+   background-position: center ;
+   background-size: cover;
+ }
+ .myimg9{
+   background-image: url(../media/karnataka-thali-Copy.webp);
+   background-position: center ;
+   background-size: cover;
+ }
+ .myimg10{
+   background-image: url(../media/Kashmiri-Thali-Copy.webp);
+   background-position: center ;
+   background-size: cover;
+ }
+ .myimg11{
+   background-image: url(../media/guj-Copy.webp);
+   background-position: center ;
+   background-size: cover;
+ }
+ .myimg12{
+   background-image: url(../media/rajhas.webp);
+   background-position: center ;
+   background-size: cover;
+ }
+
+ .myimg13{
+   background-image: url(../media/pnj-food.webp);
+   background-position: center ;
+   background-size: cover;
+ }
+
+ .myimg14{
+   background-image: url(../media/Creating-A-Manipuri-Thali.webp);
+   background-position: center ;
+   background-size: cover;
+ }
+
+ .myimg15{
+   background-image: url(../media/kerala.webp);
+   background-position: center ;
+   background-size: cover;
+ }
+ .myimg16{
+   background-image: url(../media/tamil.webp);
+   background-position: center ;
+   background-size: cover;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .mycontext{
+   width: 200px;
+   height: 170px;
+   /* border: 2px solid white; */
+   padding: 25px;
+ }
+
+
+ 
+
+
+
+
+
+
+  /* tablebooking */
+  .tablebooking-main{
+
+   width: 100%;
+  }
+  .bgclip{
+   position: absolute;
+   right: 0;
+   bottom: 0; 
+   width: 100%;
+   height: auto;
+   z-index: -100;
+
+}
+.tablebooking-box {
+
+   height: 500px;
+   width: 1000px;
+   box-sizing: border-box;
+   padding: 10px;
+   border: 2px solid white;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+
+   position: relative;
+   top: 100px;
+   left: 250px;
+
+   background-image: linear-gradient(160deg,rgba(0,0,0,.8),rgba(0,10,0,.9));
+            box-shadow:30px 30px 50px rgba(0,0,0,.5);
+}
+
+.table-content,.table-form{
+   height: 500px;
+   width: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   position: relative;
+}
+.table-form table{
+   width: 300px;
+   height: 400px;
+}
+#tb{
+   position: relative;
+   bottom: 28px;
+}
+#hr
+{
+   position: relative;
+   top: 10px;
+}
+
+.table-content h2{
+   font-size: 30px;
+   padding: 20px;
+  
+}
+.table-content h4{
+   font-size: 23px;
+   padding: 10px;
+}
+
+.table-content p{
+   text-align: justify;
+   line-height: 1.5;
+}
+input{
+border-radius: 10px;
+ height: 20px;
+ padding: 10px;
+}
+textarea{
+   border-radius: 10px;
+}
+#submit{
+   height: 40px;
+   width: 200px;
+   position: relative;
+   left: 80px;
+}
+#ram{
+   
+}
+/* contact box */
+.contact{
+   /* position: relative;
+   top:250px;
+   height: 600px; */
+   
+
+}
+.contact .contact-box{
+   display:flex;
+   justify-content: space-around;
+   box-sizing: border-box;
+   padding: 50px;
+   position: relative;
+   bottom: 50px;
+
+}
+.c-left{
+   height: 450px;
+   width: 450px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+  
+}
+.c-right{
+  
+   height: 450px;
+   width: 450px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+}
+.c-right a{
+   text-decoration: none;
+   margin-right: 20px;
+   
+}
+
+.c-left form input{
+border-radius: 10px;
+height: 40px;
+padding: 10px;
+border: 2px solid orangered;
+
+}
+.c-left form textarea{
+   border-radius: 10px;
+   width: 30;
+   border: 2px solid orangered;
+   padding: 10px;
+}
+#wp{
+   color: green;
+}
+#fb{
+   color: blue;
+   margin-right: 25px;
+}
+#ig{
+   color: red;
+   margin-right: 25px;
+}
+
+
+.location{
+	width:80%;
+	margin:auto;
+	padding:8px 0;
+   position:relative;
+   bottom: 50px;
+	
+}
+.location iframe{
+	width:100%;
+}
+
+/* southindian */
+#img{
+   width: 100px;
+   height: 00px;
+}
+
